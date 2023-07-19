@@ -5,21 +5,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px 25px;
-    border-radius: 50px;
-    background-color: #f515eacc;
-    margin-top: 30px;
-    
-}
-.btn-primary a{
-    text-decoration: none;
-    margin: 0;
-}
+
 /* SHER STYLE END */
 
 /* header style start here  */
@@ -27,7 +13,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 120px;
+    padding: 15px 120px;
 }
 
 .gamer {
@@ -66,7 +52,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 1rem 1.1rem;
+    padding: 5px 10px;
     background-color:  rgba(11, 2, 35, 0.10);
     border-radius: 8px;
 
@@ -83,17 +69,21 @@ nav {
 .banner{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    gap: 100px ;
-    background-color: rgba(253, 209, 247, 0.137);
+    justify-content: space-between;
+    /* background-color: rgba(253, 209, 247, 0.137); */
     
     
+}
+.banner-content > img{
+    height: 100%;
+    width: 100%;
 }
 .banner-content{
-    background-image: url("../images/Group 14.png");
+    background-image: url("../images/Group14.png");
+    width: 50%;
 }
 .banner-title{
-    padding-left: 180px ;
+    padding-left: 120px ;
 }
 .banner-content h3{
     color: rgba(11, 2, 35, 1);
@@ -109,16 +99,40 @@ nav {
 .description-title{
     padding:10px 0px;
 }
+
+/* button */
+.btn-primary{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: #f515eacc;
+
+     
+}
+#btn-go{
+    background-color:rgb(78, 197, 247);
+}
 .banner-description{
     color: rgba(83, 76, 100, 1);
     /* gap: 30px; */
 }
+.ancour-bnt{
+    display: inline-flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+.banner-images{
+    width: 90%;
 
+}
 .banner-images img{
     width: 60%;
     height: 50%;
     border: 3px solid sienna;
-    margin-left: 120px;
+    margin-left: 150px;
     
 }
 /* Online Games Funny Videos style start  */
@@ -174,15 +188,15 @@ nav {
 
 }
 .game-image-pro{
-    width: 450px;
-    height: 420px;
+    width: 380px;
+    height: 350px;
 }
 .game-image-cat{
-    width: 200px;
-    height: 220px;
+    width: 150px;
+    height: 170px;
     position: absolute;
-    left: 300px;
-    top: 280px;
+    left: 280px;
+    top: 240px;
 }
 
 .play-contain h1{
@@ -215,10 +229,10 @@ nav {
     gap: 10px;
     background-color: #FFF;
     border-radius: 40px;
-    padding: 15px;
+    padding: 8px;
 }
 .gamer-text-title:hover{
-    border: 2px solid deeppink;
+    border: 1px solid deeppink;
     cursor: pointer;
 }
 .gamer-text-title p:hover{
@@ -285,4 +299,37 @@ footer{
 .footer-icon img{
     width: 30px;
     height: 30px;
+}
+
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+        gap: 55px;
+    }
+    .banner{
+        padding: 0px;
+        margin: 0px;
+    }
+    .continer{
+        flex-direction: column;
+    }
+    .online-play-container{
+       display: grid;
+       width: 40px;
+       grid-template-columns: repeat(1,1fr);
+       gap: 30px;
+       justify-content: center;
+
+    }
+    .play-container,  .banner{
+        flex-direction: column-reverse;
+    }
+    /* .game-images{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width:10px;
+       height: 10px;
+    } */
+
 }
