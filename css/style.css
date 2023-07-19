@@ -205,10 +205,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     background-color: rgba(253, 233, 255, 0.514);
-    padding: 60px 65px;
-    border: 3px solid darkblue;
+    padding: 70px 60px;
 }
 .gamer-text-title{
     display: flex;
