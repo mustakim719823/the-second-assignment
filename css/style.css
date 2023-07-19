@@ -74,7 +74,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: rgba(253, 209, 247, 0.137); */
+    background-color: #f5f5f5bb;
 
 
 }
@@ -113,7 +113,7 @@ nav {
 /* button */
 .btn-primary {
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     text-decoration: none;
     padding: 10px 25px;
@@ -129,7 +129,6 @@ nav {
 
 .banner-description {
     color: rgba(83, 76, 100, 1);
-    /* gap: 30px; */
 }
 
 .ancour-bnt {
@@ -140,13 +139,10 @@ nav {
 
 .banner-images {
     width: 90%;
-
 }
-
 .banner-images img {
     width: 60%;
     height: 50%;
-    border: 3px solid sienna;
     margin-left: 150px;
 
 }
