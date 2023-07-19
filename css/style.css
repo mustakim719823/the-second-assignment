@@ -6,6 +6,11 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+#gradient{
+    background:linear-gradient(180deg,rgba(249, 72, 178, 1), rgba(135, 88, 241, 1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 /* SHER STYLE END */
 
@@ -409,18 +414,33 @@ footer {
         grid-template-columns: repeat(3,1fr);
         text-align: center;
         margin: 30px 15px;
-        gap: 10px;
+        gap: 15px;
     }
     .footer-privacy{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         text-align: center;
         margin: 30px 15px;
-        gap: 10px;
+        gap: 15px;
     }
     .footer-copy-right{
         margin: 20px 100px;
         text-align: center;
     }
 
+}
+/* media quary for tablet  */
+@media screen and (min-width:576px) and (max-width:768px) {
+    header,.online-container, .play-container,.gamer-text-container, footer{
+        margin:0px;
+        margin-bottom: 80px;
+        padding: 0px;
+        width: 200%;
+    }
+    .game-images{
+        margin-left: 100px;
+    }
+    .play-contain{
+        margin-right: 100px;
+    }
 }
